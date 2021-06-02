@@ -203,6 +203,36 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/main_linear_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_like"
+                        android:layout_width="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/lik"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:weightSum="3"
                     android:layout_marginTop="10dp"
@@ -210,6 +240,7 @@
                     android:orientation="horizontal"
                     android:layout_height="100dp">
                     <LinearLayout
+                        android:id="@+id/bangladesh"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -230,6 +261,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/click_comment"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -273,7 +305,50 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/comment_main"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/enter_comment"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/flag"
+                            android:hint="Enter your Comment"
+                            android:padding="15dp" />
 
+                        <ImageView
+                            android:id="@+id/comment_send"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="3"
+                            android:clickable="true"
+                            android:src="@drawable/send" />
+                    </LinearLayout>
+                        <TextView
+                            android:id="@+id/show_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:textSize="25sp"
+                            />
+
+
+                    </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -318,6 +393,37 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/main_linear_like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_like2"
+                        android:layout_width="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/lik"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/like_count2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:weightSum="3"
                     android:layout_marginTop="10dp"
@@ -325,6 +431,7 @@
                     android:orientation="horizontal"
                     android:layout_height="100dp">
                     <LinearLayout
+                        android:id="@+id/united"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -345,6 +452,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/click_comment2"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -386,6 +494,51 @@
                             android:text="SHARE"/>
 
                     </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment_main2"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/enter_comment2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/flag"
+                            android:hint="Enter your Comment"
+                            android:padding="15dp" />
+
+                        <ImageView
+                            android:id="@+id/comment_send2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="3"
+                            android:clickable="true"
+                            android:src="@drawable/send" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/show_comment2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textSize="25sp"
+                        />
+
+
                 </LinearLayout>
 
 
@@ -433,6 +586,34 @@ Bordered to the west by the majestic Red Sea and the east by the Persian Gulf, S
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/main_linear_like3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_like3"
+                        android:layout_width="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/lik"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/like_count3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_marginTop="10dp"
@@ -441,6 +622,7 @@ Bordered to the west by the majestic Red Sea and the east by the Persian Gulf, S
                     android:weightSum="3">
 
                     <LinearLayout
+                        android:id="@+id/saudi"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -463,6 +645,7 @@ Bordered to the west by the majestic Red Sea and the east by the Persian Gulf, S
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/click_comment3"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -507,7 +690,50 @@ Bordered to the west by the majestic Red Sea and the east by the Persian Gulf, S
                     </LinearLayout>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/comment_main3"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/enter_comment3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/flag"
+                            android:hint="Enter your Comment"
+                            android:padding="15dp" />
 
+                        <ImageView
+                            android:id="@+id/comment_send3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="3"
+                            android:clickable="true"
+                            android:src="@drawable/send" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/show_comment3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textSize="25sp"
+                        />
+
+
+                </LinearLayout>
 
 
                 <LinearLayout
@@ -560,6 +786,38 @@ Zedekiah's Cave." />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/main_linear_like4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_like4"
+                        android:layout_width="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/lik"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/like_count4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:weightSum="3"
                     android:layout_marginTop="10dp"
@@ -567,6 +825,7 @@ Zedekiah's Cave." />
                     android:orientation="horizontal"
                     android:layout_height="100dp">
                     <LinearLayout
+                        android:id="@+id/palestine1"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -587,6 +846,7 @@ Zedekiah's Cave." />
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/click_comment4"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -628,6 +888,50 @@ Zedekiah's Cave." />
                             android:text="SHARE"/>
 
                     </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/comment_main4"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/enter_comment4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/flag"
+                            android:hint="Enter your Comment"
+                            android:padding="15dp" />
+
+                        <ImageView
+                            android:id="@+id/comment_send4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="3"
+                            android:clickable="true"
+                            android:src="@drawable/send" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/show_comment4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textSize="25sp"
+                        />
+
+
                 </LinearLayout>
 
 
